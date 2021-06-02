@@ -25,6 +25,7 @@ public class HelloWorldResource {
     }
 
     @POST
+    @Consumes(MediaType.APPLICATION_JSON)
     @Operation(description = "Accepts properly formatted greetings and says nothing in response.")
     public void receiveHello(
             @Parameter(description = "Formatted greeeting", required = true)
