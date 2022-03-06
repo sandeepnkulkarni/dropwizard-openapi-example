@@ -2,7 +2,7 @@
 
 Created using dropwizard-archetype with below command:
 
-`mvn archetype:generate -DarchetypeGroupId=io.dropwizard.archetypes -DarchetypeArtifactId=java-simple -DarchetypeVersion=2.0.21`
+`mvn archetype:generate -DarchetypeGroupId=io.dropwizard.archetypes -DarchetypeArtifactId=java-simple -DarchetypeVersion=2.0.28`
 
 More information: https://www.dropwizard.io/en/latest/getting-started.html
 
@@ -21,7 +21,7 @@ To see your applications health enter url `http://localhost:8081/healthcheck`
 
 Custom POM file
 ---
-Used reference from here: https://github.com/dropwizard/dropwizard/blob/v2.0.21/dropwizard-example/pom.xml
+Used reference from here: https://github.com/dropwizard/dropwizard/blob/v2.0.28/dropwizard-example/pom.xml
 
 OpenAPI Specification
 ---

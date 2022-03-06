@@ -1,7 +1,8 @@
 package local.snk.helloworld.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.google.common.base.Optional;
+
+import java.util.Optional;
 
 import static java.lang.String.format;
 
