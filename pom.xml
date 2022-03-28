@@ -23,6 +23,7 @@
         <!-- Maven dependencies versions -->
         <dropwizard.version>2.0.28</dropwizard.version>
         <swagger-v3.version>2.1.13</swagger-v3.version>
+        <swagger-ui.version>4.9.0</swagger-ui.version>
 
         <!-- Maven plugin versions -->
         <maven-shade-plugin.version>3.2.4</maven-shade-plugin.version>
@@ -161,7 +162,7 @@
                             <goal>wget</goal>
                         </goals>
                         <configuration>
-                            <url>https://github.com/swagger-api/swagger-ui/archive/master.tar.gz</url>
+                            <url>https://github.com/swagger-api/swagger-ui/archive/v${swagger-ui.version}.tar.gz</url>
                             <unpack>true</unpack>
                             <outputDirectory>${project.build.directory}</outputDirectory>
                         </configuration>
@@ -183,7 +184,7 @@
                             <outputDirectory>target/classes/app</outputDirectory>
                             <resources>
                                 <resource>
-                                    <directory>${project.build.directory}/swagger-ui-master/dist</directory>
+                                    <directory>${project.build.directory}/swagger-ui-${swagger-ui.version}/dist</directory>
                                     <filtering>true</filtering>
                                     <excludes>
                                         <exclude>index.html</exclude>
